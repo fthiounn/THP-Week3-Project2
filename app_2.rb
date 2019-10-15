@@ -3,7 +3,7 @@ Bundler.require
 
 require_relative 'lib/game'
 require_relative 'lib/player'
-require_relative 'lib/menu'
+require_relative 'lib/game'
 
 def perform
 	system 'clear'

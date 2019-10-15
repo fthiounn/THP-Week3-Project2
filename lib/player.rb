@@ -86,10 +86,12 @@ class HumanPlayer < Player
     end
     #¿WHY? generates a random health pack and uses it
     def search_health_pack
+    	tmp = 0
     	health_pack = rand(1..6)
     	if health_pack == 1 then
     		puts "No health pack found"
     	elsif health_pack < 6 then
+    		tmp = 50
     		@life_points = life_points + 50
     		if life_points > 100 then
     			tmp = 50 - (life_points - 100)
@@ -98,6 +100,7 @@ class HumanPlayer < Player
     		puts "Yeah, you found a +50 health pack ! You gained +#{tmp} HP"
     	else
     		@life_points = life_points + 80
+    		tmp = 80
     		if life_points > 100 then
     			tmp = 80 - (life_points - 100)
     			@life_points = 100
