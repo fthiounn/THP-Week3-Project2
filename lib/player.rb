@@ -79,7 +79,7 @@ class HumanPlayer < Player
     	puts "You found a lvl #{new_weapon_lvl} weapon"
     	if new_weapon_lvl > @weapon_level then
     		@weapon_level = new_weapon_lvl
-    		puts "Yeah ! This weapon is better than your current weapon : you equiped the lvl #{@weapon_level} weapon"
+    		puts "Yeah ! This weapon is better than your current weapon : you equiped the lvl "+"#{@weapon_level}".green + "weapon"
     	else
     		puts "Your current weapon is stronger :( too bad"
     	end
@@ -97,7 +97,7 @@ class HumanPlayer < Player
     			tmp = 50 - (life_points - 100)
     			@life_points = 100
     		end
-    		puts "Yeah, you found a +50 health pack ! You gained +#{tmp} HP"
+    		puts "Yeah, you found a +"+"50".green+" health pack ! You gained +"+"#{tmp}".green+" HP"
     	else
     		@life_points = life_points + 80
     		tmp = 80
@@ -105,7 +105,7 @@ class HumanPlayer < Player
     			tmp = 80 - (life_points - 100)
     			@life_points = 100
     		end
-    		puts "Yeah, you found a +80 health pack ! You gained +#{tmp} HP"
+    		puts "Yeah, you found a +"+"80".green+" health pack ! You gained +"+"#{tmp}".green+" HP"
     	end
     end
 end
