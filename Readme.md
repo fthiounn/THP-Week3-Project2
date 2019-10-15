@@ -12,5 +12,8 @@ C'est un projet relativement long et complet : l'objectif est a minima que tu pu
 
 
 Notes :
-
+	Il est impossible de gagner dans la v3, on est submergés trop rapidement.
+	possibles solutions :
+		- ralentir le spwan des monstres (deja effectué un peu)
+		- augmenter les hp et la taille des health packs
 	
