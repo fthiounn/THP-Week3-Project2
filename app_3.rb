@@ -14,7 +14,6 @@ def perform
 	my_game.game_end
 end
 
-
 #the game loop
 def game_loop(my_game)
 	system 'clear'
@@ -58,7 +57,6 @@ def init
   #setup : creation of the Human Player
   puts "Please name your player :"
   print "> "
-
 	return gets.chomp
 end
 def user_check(str,nb_enemy)

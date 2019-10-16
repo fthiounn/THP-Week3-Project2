@@ -44,14 +44,14 @@ class Game
 	#et que si un ennemi est mort, on ne doit plus proposer de l'attaquer.
 	def menu
 		puts "What to do ?"
-  	puts "a - Find a better weapon ?"
-  	puts "s - Find a health pack ?"
-  	puts "Attack a player in sight :"
-  	for n in 0..@enemies_in_sight.size-1 do
-  		if(@enemies_in_sight[n].life_points >0) then
-	  		puts "#{n} - #{@enemies_in_sight[n].name} who has #{@enemies_in_sight[n].life_points} HP left"
+	  	puts "a - Find a better weapon ?"
+	  	puts "s - Find a health pack ?"
+	  	puts "Attack a player in sight :"
+	  	for n in 0..@enemies_in_sight.size-1 do
+	  		if(@enemies_in_sight[n].life_points >0) then
+		  		puts "#{n} - #{@enemies_in_sight[n].name} who has #{@enemies_in_sight[n].life_points} HP left"
+		  	end
 	  	end
-  	end
 	end
 	#Écris une méthode menu_choice qui prend en entrée un string. Cette méthode va permettre de faire 
 	#réagir le jeu en fonction du choix, dans le menu, de l'utilisateur. Par exemple, si l'entrée est 
